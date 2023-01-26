@@ -79,11 +79,11 @@ function isOpenElement(tag) {
     
     if (cond) {  // open
         stack.push(tag);
-      //  output(stack);
+        output(stack);
         return true;
     } else {  // close
         stack.pop();
-     //   output(stack);
+        output(stack);
         return false;
     }
      
@@ -105,7 +105,7 @@ function getElement(tag,op) {
 }
 
 // Modul: Ausgabe | Test
-//output("hi");
+// output("hi");
 function output(outputData) {
     console.log(outputData);
 }
